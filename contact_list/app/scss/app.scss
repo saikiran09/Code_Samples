@@ -1,0 +1,36 @@
+@import '../../node_modules/iconfonts/stylesheets/ionicons';
+@import '../../bower_components/foundation/scss/normalize';
+@import '../../bower_components/foundation/scss/foundation';
+@import '../../bower_components/foundation/scss/foundation/components/buttons';
+
+.main {
+    margin-top: 44px
+}
+
+.Count {
+    padding: 8px 15px;
+}
+
+.DirectoryList {
+    width: 100%
+}
+
+footer {
+    font-size: .75rem
+}
+
+@include ion-font;
+.trash:before {
+    @include ion-icon("trash-b", 25px, $aluminum);
+}
+.trash:hover:before {
+    @include ion-icon("trash-b", 25px, $alert-color);
+}
+
+@include ion-font;
+.edit:before {
+    @include ion-icon("edit", 23px, $aluminum);
+}
+.edit:hover:before {
+    @include ion-icon("edit", 23px, $success-color);
+}
