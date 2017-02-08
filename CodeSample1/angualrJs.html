@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+   <style>
+       label {
+           color:red;
+       }
+   </style>
+
+</head>
+<body>
+<p>Directives: AngularJS directives are extended HTML attributes with the prefix ng-.</p>
+
+<p>Module: instantiate angular using angular.module</p>
+
+<p>Expression: how we insert values into html. examples for expression found below</p>
+
+<p>Controllers: help us get data on the page by defining functions and values:</p>
+
+<p>Directives: HTML annotation that trigger javascript behaviours</p>
+
+<p>Modules:Where the application components live</p>
+
+<p>Contollers: Where we add application behaviour</p>
+
+<p>Expresssions: How values get displayed within the page</p>
+
+
+---------------------------------------
+
+<p>Controllers: help us get data on the page by defining functions and values:</p>
+
+<div ng-controller="MyAppController as main">
+
+    <span style="color:red;">product name: {{main.product.name | uppercase}}</span>
+    <span style="color:red;">product price: {{main.product.price | currency}}</span>
+
+    <!-- two way data binding-->
+    <div class="section">
+        <input type="text" class="form-control" ng-model="main.searchInput">
+
+        <p style="color:red;">{{main.searchInput}}</p>
+    </div>
+
+    <!-- ng-repeat directive -->
+    <h3>A list of TV shows</h3>
+    <ul class="list-group">
+        <!--<li class="list-group-item" ng-repeat="show in main.shows">{{show.title}} <span
+                 class="badge">{{show.year}}</span></li>-->
+
+        <!--<li class="list-group-item" ng-repeat="show in main.shows"><span class="glyphicon glyphicon-star" ng-if="show.favorite"></span>{{show.title}} <span
+                class="badge">{{show.year}}</span></li>-->
+
+        <!--<li class="list-group-item" ng-repeat="show in main.shows | filter:main.searchInput"><span class="glyphicon glyphicon-star" ng-if="show.favorite"></span>{{show.title}} <span
+                class="badge">{{show.year}}</span></li>-->
+
+
+        <li class="list-group-item"
+            ng-repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span
+                class="glyphicon glyphicon-star" ng-if="show.favorite"></span> {{show.title}} <span class="badge">{{show.year}}</span>
+        </li>
+    </ul>
+<!--
+    <select class="form-control pull-right" ng-model="main.order"
+            ng-options="order as order.title for order in main.orders"></select>
+
+    <br/>
+    <br/><br/>
+-->
+   <div class="clearfix"></div>
+
+    <div class="container">
+        <h2>Modal Example</h2>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add TV Show</button>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                    <div class="form">
+                        <form name="main.addForm" class="form"  ng-submit="main.addForm.$valid && main.addShow()">
+                            <div class="form-group">
+                                <label>Title</label>
+                                <input type="text" class="form-control" ng-model="main.new.title" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Year</label>
+                                <input type="number" min="1900" max="2030" class="form-control" ng-model="main.new.year" required />
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label>Favorite: <input type="checkbox" ng-model="main.new.favorite" /></label>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Add</button>
+                                </div>
+                            </div>
+                            <!--<div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>-->
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+    <!-- ajax call -->
+    <!--<ul class="list-group">
+        <li class="list-group-item" ng-repeat="show in main.tvshows">{{show.title}} <span
+                class="badge">{{show.year}}</span></li>
+    </ul>-->
+</div>
+</body>
+</html>
