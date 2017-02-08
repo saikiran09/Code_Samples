@@ -1,0 +1,96 @@
+menu{
+    height: 60px;
+}
+
+.container-fluid{
+    background: #c1c0bd;
+    padding: 30px;
+}
+
+.text-container{
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.text-container h3{
+    margin-top: 0;
+}
+
+.text-container ul{
+    padding-left: 15px;
+    margin-top: 10px;
+    height: 320px;
+}
+
+.text-container ul li{
+    margin-bottom: 10px;
+}
+
+.btn-default-modified, .btn-default:hover {
+    color: #fff;
+    background-color: #2196F3;
+    border-color: #2196F3;
+    border-radius: 0;
+    width: 200px;
+}
+
+.no-left-padding{
+    padding-left:0;
+}
+
+@media(min-width:320px) and (max-width:768px){
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 15px;
+    }
+
+    .no-left-padding{
+        padding-left: 15px;
+    }
+
+    .text-container{
+        border-radius: 0;
+    }
+
+    .border-top{
+        border-top: 1px solid #c1c0bd;
+    }
+
+    .no-right-padding{
+        padding-right: 0;
+    }
+
+    .expanded
+	{
+		display : block;
+		cursor: pointer;
+    }
+    
+    .expanded::after{
+        font-family: 'Glyphicons Halflings';
+        content: "\e259";
+        float: right;
+        color: #2196F3;
+        font-size: 36px;
+        margin-top: -49px;
+    }
+
+    .expanded.up::after{
+        font-family: 'Glyphicons Halflings';
+        content: "\e260";
+        color: #2196F3;
+        font-size: 36px;
+        margin-top: -47px;
+    }
+	.expanded-data
+	{
+		display : none ; 
+		width : inherit ;
+		height : auto ;
+    }
+
+	.active {
+		color : #000 ;
+	}
+}
