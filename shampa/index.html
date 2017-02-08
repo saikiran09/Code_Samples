@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Angular-nvD3 Line Chart</title>
+	<script>document.write('<base href="' + document.location + '" />');</script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>    
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+	<link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="main.css" />
+	<script src="js/jquery-2.1.1.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.5/angular-nvd3.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+	<script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+
+	<script src="main.js"></script>
+	<script src="default.setting.js"></script>
+	<script src="js/services/chartService.js"></script>
+	<script src="js/directives/tile.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+<!--   <div class="container">
+  <iframe id="iframe" ng-src="{{activeTemplate}}" sandbox="allow-same-origin allow-scripts" style="width:100%; height:800px;" chart-directive options="options" data="data" api="api" ></iframe>
+</div> -->
+
+<nav class="navbar  navbar-fixed-top" role="navigation">
+</nav>
+
+
+
+
+<div id="wrapper">
+	<!-- Sidebar -->
+
+
+	<div id="sidebar-wrapper">
+		<div  class="sidebar-nav" >
+		<ul>
+			<li ng-repeat="item in data.menuItems">{{item.mainMenu}} <span class="badge">{{item.Badge}}</span></li>
+		</ul>
+		</div>
+	</div>
+	<!-- /#sidebar-wrapper -->
+	<!-- Page Content -->
+	<div id="page-content-wrapper">
+		<a href="#menu-toggle" ng-if ="leftArrow != true" class="btn btn-default" id="menu-toggle" ng-click="toggleSlideBar()"><i class="fa toggle-left fa-angle-double-left"></i></a>
+		<a href="#menu-toggle" ng-if ="leftArrow == true" class="btn btn-default" id="menu-toggle" ng-click="toggleSlideBar()"><i class="fa toggle-left fa-angle-double-right"></i></a>
+		<div class="container-fluid">
+			<h3 class="page-header"><i class="fa fa fa-dashboard"></i> Dashboard <i class="fa fa-info-circle animated bounceInDown show-info"></i>  <input type="text" class="form-control form-cascade-control nav-input-search" size="20" placeholder="Search through site"></h3>
+			<div class="row">
+				<tile colNumber = "4" ng-repeat = "tile in data.tiles" ng-if="tile.isTop ==true" data= "data" class="{{tile.isTop}}" tiles = "tile"></tile>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 ">
+					<nvd3 options="options.barChart" data="data.barResult" class="with-3d-shadow with-transitions chart"></nvd3>
+				</div>
+				<div class="col-lg-6">
+					<section class="chart">
+						<div class="col-lg-6 ">
+							<div id="donut"></div>
+						</div>
+						<div class="col-lg-6">
+							<div id="donut1"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+
+
+			<div class="row marTop20">
+				<div class="col-lg-4">
+					<tile  colNumber = "12" ng-repeat = "tile in data.tiles" ng-if="tile.isTop!==true" class="{{tile.isTop}}" tiles = "tile"></tile>
+				</div>
+				<div class="col-lg-8">
+					<div id="liveGraph">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

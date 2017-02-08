@@ -1,0 +1,367 @@
+{
+    "barResult": [
+        {
+            "key": "Cumulative Return",
+            "values": [
+                {
+                    "label": "A",
+                    "value": 90
+                },
+                {
+                    "label": "B",
+                    "value": 0
+                },
+                {
+                    "label": "C",
+                    "value": 90
+                },
+                {
+                    "label": "D",
+                    "value": 90
+                },
+                {
+                    "label": "E",
+                    "value": 90
+                },
+                {
+                    "label": "F",
+                    "value": 98.079782601442
+                },
+                {
+                    "label": "G",
+                    "value": 13.925743130903
+                },
+                {
+                    "label": "H",
+                    "value": 15.1387322875705
+                }
+            ]
+        }
+    ],
+    "donutResult": [
+        {
+            "label": "Download Sales",
+            "value": 12
+        },
+        {
+            "label": "In-Store Sales",
+            "value": 30
+        },
+        {
+            "label": "Mail-Order Sales",
+            "value": 20
+        },
+        {
+            "label": "Download Sales",
+            "value": 12
+        },
+        {
+            "label": "In-Store Sales",
+            "value": 30
+        },
+        {
+            "label": "Mail-Order Sales",
+            "value": 50
+        }
+    ],
+    "lineResult": [
+        {
+            "x": 0,
+            "y": "0.0000",
+            "z": "1.0000"
+        },
+        {
+            "x": 10,
+            "y": "0.1736",
+            "z": "0.9848"
+        },
+        {
+            "x": 20,
+            "y": "0.3420",
+            "z": "0.9397"
+        },
+        {
+            "x": 30,
+            "y": "0.5000",
+            "z": "0.8660"
+        },
+        {
+            "x": 40,
+            "y": "0.6428",
+            "z": "0.7660"
+        },
+        {
+            "x": 50,
+            "y": "0.7660",
+            "z": "0.6428"
+        },
+        {
+            "x": 60,
+            "y": "0.8660",
+            "z": "0.5000"
+        },
+        {
+            "x": 70,
+            "y": "0.9397",
+            "z": "0.3420"
+        },
+        {
+            "x": 80,
+            "y": "0.9848",
+            "z": "0.1736"
+        },
+        {
+            "x": 90,
+            "y": "1.0000",
+            "z": "0.0000"
+        },
+        {
+            "x": 100,
+            "y": "0.9848",
+            "z": "-0.1736"
+        },
+        {
+            "x": 110,
+            "y": "0.9397",
+            "z": "-0.3420"
+        },
+        {
+            "x": 120,
+            "y": "0.8660",
+            "z": "-0.5000"
+        },
+        {
+            "x": 130,
+            "y": "0.7660",
+            "z": "-0.6428"
+        },
+        {
+            "x": 140,
+            "y": "0.6428",
+            "z": "-0.7660"
+        },
+        {
+            "x": 150,
+            "y": "0.5000",
+            "z": "-0.8660"
+        },
+        {
+            "x": 160,
+            "y": "0.3420",
+            "z": "-0.9397"
+        },
+        {
+            "x": 170,
+            "y": "0.1736",
+            "z": "-0.9848"
+        },
+        {
+            "x": 180,
+            "y": "0.0000",
+            "z": "-1.0000"
+        },
+        {
+            "x": 190,
+            "y": "-0.1736",
+            "z": "-0.9848"
+        },
+        {
+            "x": 200,
+            "y": "-0.3420",
+            "z": "-0.9397"
+        },
+        {
+            "x": 210,
+            "y": "-0.5000",
+            "z": "-0.8660"
+        },
+        {
+            "x": 220,
+            "y": "-0.6428",
+            "z": "-0.7660"
+        },
+        {
+            "x": 230,
+            "y": "-0.7660",
+            "z": "-0.6428"
+        },
+        {
+            "x": 240,
+            "y": "-0.8660",
+            "z": "-0.5000"
+        },
+        {
+            "x": 250,
+            "y": "-0.9397",
+            "z": "-0.3420"
+        },
+        {
+            "x": 260,
+            "y": "-0.9848",
+            "z": "-0.1736"
+        },
+        {
+            "x": 270,
+            "y": "-1.0000",
+            "z": "-0.0000"
+        },
+        {
+            "x": 280,
+            "y": "-0.9848",
+            "z": "0.1736"
+        },
+        {
+            "x": 290,
+            "y": "-0.9397",
+            "z": "0.3420"
+        },
+        {
+            "x": 300,
+            "y": "-0.8660",
+            "z": "0.5000"
+        },
+        {
+            "x": 310,
+            "y": "-0.7660",
+            "z": "0.6428"
+        },
+        {
+            "x": 320,
+            "y": "-0.6428",
+            "z": "0.7660"
+        },
+        {
+            "x": 330,
+            "y": "-0.5000",
+            "z": "0.8660"
+        },
+        {
+            "x": 340,
+            "y": "-0.3420",
+            "z": "0.9397"
+        },
+        {
+            "x": 350,
+            "y": "-0.1736",
+            "z": "0.9848"
+        },
+        {
+            "x": 360,
+            "y": "0.0000",
+            "z": "1.0000"
+        }
+    ],
+    "tiles": [
+        {
+            "class": "bg-info",
+            "subClass": "bg-info-dark",
+            "icon": "fa-shopping-cart",
+            "isGreater": true,
+            "title": "Sales",
+            "count": "111",
+            "status": "true",
+            "percentage": "10",
+            "isTop": true
+        },
+        {
+            "class": "bg-success",
+            "subClass": "bg-success-dark",
+            "icon": "fa-cloud-download",
+            "isGreater": true,
+            "title": "Downloads",
+            "count": "222",
+            "status": "true",
+            "percentage": "20",
+            "isTop": true
+        },
+        {
+            "class": "bg-warning",
+            "subClass": "bg-warning-dark",
+            "icon": "fa-comments",
+            "isGreater": false,
+            "title": "Components",
+            "count": "333",
+            "status": "true",
+            "percentage": "30",
+            "isTop": true
+        },
+        {
+            "class": "bg-warning",
+            "subClass": "bg-success-dark",
+            "icon": "fa-rotate-right fa-spin",
+            "isGreater": true,
+            "title": "Active Users",
+            "count": "444",
+            "status": "true",
+            "percentage": "40",
+            "isTop": false
+        },
+        {
+            "class": "bg-primary",
+            "subClass": "bg-primary-dark",
+            "icon": "fa-user",
+            "isGreater": false,
+            "title": "Total Users",
+            "count": "555",
+            "status": "true",
+            "percentage": "50",
+            "isTop": false
+        },
+        {
+            "class": "bg-info",
+            "subClass": "bg-primary-dark",
+            "icon": "fa-dollar",
+            "isGreater": false,
+            "title": "Profits",
+            "count": "666",
+            "status": "true",
+            "percentage": "60",
+            "isTop": false
+        },
+        {
+            "class": "bg-danger",
+            "subClass": "bg-danger-dark",
+            "icon": "fa-rotate-left",
+            "isGreater": false,
+            "title": "Returns",
+            "count": "777",
+            "status": "true",
+            "percentage": "70",
+            "isTop": false
+        }
+    ],
+    "menuItems": [
+        {
+            "mainMenu": "Dashboard",
+            "Badge":"12"
+        },
+        {
+            "mainMenu": "Top Navbar",
+            "Badge":"2"
+        },
+        {
+            "mainMenu": "Pages",
+            "Badge":"11"
+        },
+        {
+            "mainMenu": "UI Elements",
+            "Badge":"22"
+        },
+        {
+            "mainMenu": "Pages",
+            "Badge":"8"
+        },
+        {
+            "mainMenu": "Unlimited Elements",
+            "Badge":"12"
+        },
+        {
+            "mainMenu": "Forms",
+            "Badge":"9"
+        },
+        {
+            "mainMenu": "Charts",
+            "Badge":"12"
+        }
+    ]
+}
