@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webpage</title>
+
+</head>
+<body align="center">
+<h3>Exercise1</h3>
+<button onclick="one()"><img src="1.gif" style="float:left;"/></button>
+<button onclick="Two()"><img src="2.gif" style="float:left;"/></button>
+<button onclick="Three()"><img src="3.gif" style="float:left;"/></button>
+<h3>Exercise2</h3>
+<button onmouseover="one1()"><img src="1.gif" style="float:left;"/></button>
+<button onmouseover="Two2()"><img src="2.gif" style="float:left;"/></button>
+<button onmouseover="Three3()"><img src="3.gif" style="float:left;"/></button>
+<h3>Exercise3</h3>
+enter number in text box :<input type="text" id="num"/><button onclick="Find()">Find it</button>
+<h3>Exercise4</h3>
+enter number in text box :<input type="text" id="num1"/> <input type="text" id="num11"/>
+<button onclick="Find1()">Add</button><button onclick="Find2()">multi</button><button onclick="Find3()">sub</button><button onclick="Find4()">Divide</button>
+<h3>Exercise5</h3>
+<button onmouseover="exe1()" style= "background-color: #0000cc;">teja</button>
+<button onmouseover="exe2()" style= "background-color: #009900;">teja</button>
+<button onmouseover="exe3()" style= "background-color: #339999;">teja</button>
+<button onmouseover="exe4()" style= "background-color: #cc0033;">teja</button>
+
+
+
+
+<script>
+
+    function exe1(){
+      document.body.style.backgroundColor="#0000cc";
+      }
+
+    function exe2(){
+      document.body.style.backgroundColor="#009900";
+      }
+
+    function exe3(){
+      document.body.style.backgroundColor="#339999";
+      }
+
+    function exe4(){
+      document.body.style.backgroundColor="#cc0033";
+      }
+
+    function one(){
+    alert("You clicked on 1");
+    }
+    function Two(){
+    alert("You clicked on 2");
+    }
+    function Three(){
+    alert("You clicked on 3");
+    }
+    function one1(){
+    alert("You moused over number 1");
+    }
+    function Two2(){
+    alert(" You moused over number 2");
+    }
+    function Three3(){
+    alert(" You moused over number 3");
+    }
+    function Find(){
+    var a=document.getElementById("num").value;
+    a=a*3;
+    alert(a);
+    }
+    function Find1(){
+    var b=document.getElementById("num1").value;
+    var b1=document.getElementById("num11").value;
+    B=+b + +b1;
+    alert(+b+"+"+b1+"="+(+b + +b1));
+    }
+    function Find3(){
+    var c=document.getElementById("num1").value;
+    var c1=document.getElementById("num11").value;
+    C=c-c1;
+    alert(C);
+    }
+    function Find2(){
+    var d=document.getElementById("num1").value;
+    var d1=document.getElementById("num11").value;
+    D=d*d1;
+    alert(D);
+    }
+    function Find4(){
+    var e=document.getElementById("num1").value;
+    var e1=document.getElementById("num11").value;
+    E=e/e1;
+    alert(E);
+    }
+
+</script>
+</body>
+</html>
